@@ -37,7 +37,9 @@ public class ShiroConfiguration {
 	    public ShiroFilterChainDefinition shiroFilterChainDefinition() {
 	        DefaultShiroFilterChainDefinition chainDefinition = new DefaultShiroFilterChainDefinition();
 	        // use permissive to NOT require authentication, our controller Annotations will decide that
-	        chainDefinition.addPathDefinition("/**", "authcBasic[permissive]");
+	        //TODO: commenting to removing basic authentication using header
+	  //      chainDefinition.addPathDefinition("/**", "authcBasic[permissive]");
+	        
 	        return chainDefinition;
 	    }
 
